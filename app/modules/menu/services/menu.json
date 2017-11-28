@@ -1,0 +1,61 @@
+{
+    "meta":{},
+    "data":{
+  "menu": [
+    {
+      "name": "Dashboard",
+      "uri": "/",
+      "state": "app.home",
+      "nodes": [],
+      "icon": "fa-dashboard"
+    },
+    {
+      "name": "Principal",            
+      "nodes": [
+        {
+          "name": "Principal 1",        
+          "state": "app.clientes",
+          "nodes": []
+        },
+        {
+          "name": "Tablas Plugins",
+          "uri": "/tablasplugins",
+          "state": "tablasplugins",
+          "nodes": []
+        }
+      ],
+      "icon": "fa-table",
+      "padre": true
+    },
+    {
+      "name": "Niveles",
+      "uri": "/niveles",
+      "state": "app.niveles",
+      "nodes": [
+        {
+          "name": "Item 1",
+          "uri": "/item1",
+          "state": "app.niveles.item1",
+          "nodes": []
+        },
+        {
+          "name": "Item 2",
+          "uri": "/item2",
+          "state": "app.niveles.item2",
+          "padre": true,
+          "nodes": [
+            {
+              "name": "Detalle",
+              "uri": "/detalle",
+              "state": "app.niveles.item2.detalle",
+              "nodes": []
+            }
+          ]
+        }
+      ],
+      "icon": "fa-list-ol",
+      "padre": true
+    }
+  ]
+  }
+}
